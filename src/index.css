@@ -1,13 +1,178 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ 
+html, body {
+  font-family: 'Roboto', sans-serif;
+  background: hsl(247, 19%, 66%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  display: flexbox;
+  
 }
+
+/*-------Begin: Nav -----------*/
+navbar {
+ height: 100vh;
+ color: rgb(43, 43, 63);
+ background: hsl(248, 39%, 39%);
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+.logo-container {
+  margin-top: 3rem;
+  padding-left: 1.5rem;
+  width: 200px;
+  height: 100px;
+}
+
+.menu {
+  float: right;
+  margin-top: -100px;
+  display: inline-flex;  
+  margin-right: 100px;
+}
+
+.menu .login {
+  margin-left: 50px;
+}
+
+navbar .logo-container,
+navbar .controls-container {
+  padding: 40px 25px;
+  display: flex;
+  flex-direction: column;
+} 
+
+navbar .logo-container img {
+  width: 20px;
+}
+
+navbar .icon {
+  color: rgb(255,255,255);
+}
+
+/*-------End: Nav -----------*/
+
+/*-------Begin: Dashboard -----------*/
+
+dashboard {
+  padding: 20px;
+  width: 100%;
+}
+
+dashboard .ticket-container {
+  height: 80vh;
+  overflow: scroll;
+} 
+
+/*-------Begin: TicketCard -----------*/ 
+
+.ticket-card {
+  display: flex;
+  width: 100%;
+}
+
+.ticket-card #link {
+  display: flex;
+  width: 100%;
+}
+
+.ticket-card #link > * {
+  background-color: rgb(61, 53, 38);
+  margin: 2px;
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.ticket-card .ticket-color {
+  width: 16px !important;
+  padding: 10px !important;
+  margin: 2px;
+}
+
+.ticket-card .avatar-container {
+  display: flex;
+  justify-content: center;
+  width: 80px;
+}
+
+.ticket-card .img-container {
+  height: 50px;
+  width: 50px;
+  border-radius: 26px;
+  overflow: hidden; 
+}
+
+.ticket-card .img-container img {
+  width: 100% 
+}
+
+.ticket-card .status-display {
+  display: flex;
+  justify-content: center;
+}
+
+.ticket-card .priority-display {
+  display: flex;
+  justify-content: center;
+}
+
+.ticket-card .priority-display .star-container {
+  display: flex;
+}
+
+.ticket-card .priority-display .star-container h3 {
+  margin: 7px;
+  padding: 0px;
+}
+
+#link {
+  text-decoration: none;
+  color: rgb(43, 43, 63);
+}
+
+/* Begin: Progress-display */
+.ticket-card .progress-display {
+  min-width: 200px;
+  height: 30px;
+  background-color: rgb(179, 139, 66);
+  border-radius: 15px;
+  overflow: hidden
+}
+
+.ticket-card .progress-indicator {
+  background-color: rgb(41, 76, 215);
+  height: 100%;
+}
+
+/* End: Progress-display */
+
+/* Begin: Delete-Card */
+.ticket-card .delete-card {
+  background-color: rgb(41, 76, 200);
+  width: 50px;
+  margin: 2px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ticket-card .delete-card .delete-icon {
+  color: rgba(255, 255, 255);
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* End: Delete-Card */
+
+
+ 
+ 
